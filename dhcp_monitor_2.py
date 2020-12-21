@@ -81,7 +81,7 @@ def test(packet):
 
 
 if __name__ == "__main__":
-    pb_token = 'o.eF4QSWcyMswqDzX5b72MjPCLiHa7DpUn'
+    pb_token = 'insert pushbullet token here'
     host = sniff(filter="udp and (port 67 or 68)", prn=lambda x: handle_dhcp_packet(x, pb_token))
 
     try:
