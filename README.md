@@ -6,7 +6,7 @@ Monitors the LAN for DHCP requests:
 - receive weekly and or monthly reports by email: html email with a pdf attached.
 
 How to use:
-1. Paste the complete folder to your system.
+1. Paste the complete folder onto your system.
 2. Create an account at Pushbullet and download the Pushbullet app on your phone.
 3. Put the API Token into the dhcp_monitor_2.py script at 'pb_token'.
 4. use Cron or another tool to schedule the reporting.py weekly or monthly.
