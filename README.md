@@ -18,4 +18,4 @@ How to use:
 
 ![](images/DHCP_mobile_presentation.jpg)
 
-![](weeklyDHCP.png)
+![](images/weeklyDHCP.png)
