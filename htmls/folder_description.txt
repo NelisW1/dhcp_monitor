@@ -1,0 +1,1 @@
+Here the htmls to generate the html email and the pdf are stored.
