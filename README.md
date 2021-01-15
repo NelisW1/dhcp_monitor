@@ -12,3 +12,6 @@ How to use:
 4. use Cron or another tool to schedule the reporting.py weekly or monthly.
   - Weekly: shows the previous week. Schedule to execute on the 1st day of the week.
   - Monthly: shows the previous month. Schedule to execute on the 1st of every month.
+5. extra requirement for pdf module: 
+   Make sure to have wkhtmltopdf installed:
+   https://wkhtmltopdf.org/downloads.html
