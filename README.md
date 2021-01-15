@@ -1,4 +1,4 @@
-![]images/
+![](images/DHCP_mobile_presentation.jpg)
 
 # dhcp_monitor
 Monitors the LAN for DHCP requests: 
