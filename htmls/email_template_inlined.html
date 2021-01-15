@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHCP Requests Report</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;800&display=swap');
+
+        @media screen and (max-width: 600px) {
+            h1 {
+                font-size: 24px !important;
+                max-width:350px;
+                margin: 25px auto !important;
+                }
+        }
+
+        @media screen and (max-width: 400px) {
+            h1 {
+                font-size: 18px !important;
+                max-width:300px;
+                margin: 10px auto !important;
+                }
+        }
+    </style>
+
+</head>
+
+<body style="font-family: 'Catamaran', sans-serif;font-size: 18px;margin: 0;padding: 0;">
+
+    <center class="wrapper" style="width: 100%;table-layout: fixed;background: #f6f9fc;padding-bottom: 40px;">
+        <div class="webkit" style="max-width: 800px;background-color: #ffffff;border-style: solid;border-width: 1px;border-color: #000000;">
+
+            <div class="header" style="font-family: 'Catamaran', sans-serif;max-width: 800px;height: 100px;background: #000000;color: #ffffff;border-style: solid;border-width: 1px;border-color: #000000;">
+                <h1 style="width: 100%;max-width: 520px;margin: 30px auto 32px auto;font-size: 30px;">Weekly DHCP Requests Report</h1>
+            </div>
+
+            <table class="outer" align="center" style="border-spacing: 1;max-width: 800px;margin: 0 auto;width: 100%;">
+                <tr>
+                    <td class="left_col" style="padding: 0;">
+                        <img class="week" src="cid:{cid1}" style="border: 0;width: 100%;max-width: 500px;">
+                        <img class="heatmap" src="cid:{cid2}" style="border: 0;width: 100%;max-width: 500px;">
+                    </td>
+                    <td class="right_col" style="padding: 0;">
+                        <img class="tophosts" src="cid:{cid3}"  style="border: 0;width: 100%;max-width: 280px;">
+                        <img class="pie" src="cid:{cid4}"  style="border: 0;width: 100%;max-width: 280px;">
+                    </td>
+                </tr>
+            </table>
+
+            <div class="footer" style="font-family: 'Catamaran', sans-serif;height: 60px;font-size: 18px;background: #606060;color: #ffffff;">
+            </div>
+        </div>
+    </center>
+
+
+</body>
+</html>

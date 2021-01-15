@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHCP Requests Report</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;800&display=swap');
+        * {
+            margin: 0;
+            border: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Catamaran', sans-serif;
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            background: #f6f9fc;
+            padding-bottom: 40px;
+        }
+
+        .webkit {
+            max-width: 800px;
+            background-color: #ffffff;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #000000;
+        }
+
+        .header {
+            font-family: 'Catamaran', sans-serif;
+            max-width: 800px;
+            height: 100px;
+            background: #000000;
+            color: #ffffff;
+
+            border-style: solid;
+            border-width: 1px;
+            border-color: #000000;
+        }
+
+        table {
+            border-spacing: 1;
+            max-width: 100%;
+        }
+
+        .outer {
+            Margin: 0 auto;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        td {
+            padding: 0;
+        }
+
+         h1{
+           width:100%;
+           max-width:520px;
+           margin: 20px auto 20px auto;
+           font-size: 34px;
+        }
+
+        .footer{
+            font-family: 'Catamaran', sans-serif;
+            height: 60px;
+            font-size: 18px;
+            background: #606060;
+            color: #ffffff;
+        }
+
+        img {
+            border: 0;
+        }
+
+        .week{
+            width:100%;
+            max-width: 500px;
+        }
+
+
+        .heatmap{
+            width:100%;
+            max-width:500px;
+        }
+
+        .tophosts{
+            width:100%;
+            max-width:280px;
+        }
+
+        .pie{
+            width:100%;
+            max-width:280px;
+        }
+
+        @media screen and (max-width: 600px){
+        h1 {
+            font-size: 24px;
+            max-width:350px;
+            margin: 30px auto 30px auto;
+          }
+        }
+
+        @media screen and (max-width:400px){
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <center class="wrapper">
+        <div class="webkit">
+
+            <div class="header">
+                <h1>Weekly DHCP Requests Report</h1>
+            </div>
+
+            <table class="outer" align="center">
+                <tr>
+                    <td class="left_col">
+                        <img class="week" src="{week_file}">
+                        <img class="heatmap" src="{heatmap}">
+                    </td>
+                    <td class="right_col">
+                        <img class="tophosts" src="{tophosts}">
+                        <img class="pie" src="{pie}">
+                    </td>
+                </tr>
+            </table>
+
+            <div class="footer">
+            </div>
+        </div>
+    </center>
+
+
+</body>
+</html>
