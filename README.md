@@ -1,5 +1,3 @@
-![](images/DHCP_mobile_presentation.jpg)
-
 # dhcp_monitor
 Monitors the LAN for DHCP requests: 
 
@@ -17,3 +15,7 @@ How to use:
 5. extra requirement for pdf module:
    Make sure to have wkhtmltopdf installed:
    https://wkhtmltopdf.org/downloads.html
+
+![](images/DHCP_mobile_presentation.jpg)
+
+![]()
