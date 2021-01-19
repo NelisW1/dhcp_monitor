@@ -167,8 +167,9 @@ if __name__ == "__main__":
 
 
     # SEND EMAIL
-    sender = 'rabbitroger287@gmail.com'
-    receivers = ['rabbitroger287@gmail.com', 'niels.worrell@gmail.com']
+    sender = 'example@gmail.com'  # can also use username instead
+    receivers = ['emailaddress_1', 'emailaddress_2', 'etc']
+    host = 'smtp.gmail.com'
     username = os.environ.get('EMAIL_USER')
     password = os.environ.get('EMAIL_PW')
 
@@ -181,9 +182,6 @@ if __name__ == "__main__":
         'cid4': image_file_paths[3]
     }
 
-    send_mail(subject='Weekly DHCP Requests Report', from_email=sender, to_emails=receivers, user_mailserver=username,
-        pw_mailserver=password, html_file_path=html_inlined, html_inserts=html_inserts, att_file_paths=pdf_name)
-
-
-
-
+    send_mail(subject='Weekly DHCP Requests Report', from_email=sender, to_emails=receivers, host=host,
+              user_mailserver=username, pw_mailserver=password, html_file_path=html_inlined, html_inserts=html_inserts,
+              att_file_paths=pdf_name)
