@@ -6,14 +6,14 @@ from email.mime.application import MIMEApplication
 
 import os
 
-# should be passed through environment variables
-username = os.environ.get('EMAIL_USER')
-password = os.environ.get('EMAIL_PW')
 
-def send_mail(text='Email Body', subject='Hello World', from_email='', to_emails=None, user_mailserver='',
+def send_mail(text='Email Body', subject='Hello World', from_email='', to_emails=None, host=None, user_mailserver='',
               pw_mailserver='', html_file_path=None, html=None, html_inserts=None, image_file_paths=None,
               att_file_paths=None):
-    assert isinstance(to_emails, list)
+    assert to_emails is not None, "to_emails cannot be None."
+    assert isinstance(to_emails, list), "To emails is not a list."
+    assert host is not None, "Host cannot be None."
+    assert len(from_email) > 0, 'From email cannot be empty'
 
 
     # EMAIL OBJECT
@@ -144,7 +144,7 @@ def send_mail(text='Email Body', subject='Hello World', from_email='', to_emails
     # SEND EMAIL
     # login to my smtp server:
     # 1 create server, 2 configure(ehlo), 3 secure(starttls), 4 login
-    server = smtplib.SMTP(host='smtp.gmail.com', port=587)
+    server = smtplib.SMTP(host=host, port=587)
     server.ehlo()  # identifies with server
     server.starttls()  # creates a secure connection
     server.ehlo()  # identifies with server as encrypted connection
@@ -152,15 +152,3 @@ def send_mail(text='Email Body', subject='Hello World', from_email='', to_emails
     server.login(user_mailserver, pw_mailserver)  # login
     server.sendmail(from_email, to_emails, msg_str)
     server.quit()
-
-    def test(packet):
-        print(packet['DHCP'].options)
-        print("")
-        print(packet['Ether'])
-        print("")
-        print(packet['IP'].src, packet['IP'].dst)
-        print("")
-        print(packet['ARP'])
-        print("")
-
-    key = 'o.eF4QSWcyMswqDzX5b72MjPCLiHa7DpUn'
