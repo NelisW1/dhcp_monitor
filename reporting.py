@@ -119,7 +119,7 @@ def report(database='', style='weekly'):
 
     # top 5 hosts count
     tophosts_file = 'graphs/tophosts.png'
-    custom_countplot(df, 'hostname', xlabel='DHCP requests', title='Top 10 Hosts', custom=True, horizontal=True,
+    custom_countplot(df, 'hostname', xlabel='DHCP requests', title='Top 5 Hosts', custom=True, horizontal=True,
                      sort_by_size=True, bar_color=color_1, title_clr=color_2, ticklabel_clr=color_3, xlabel_clr=color_4,
                      label_pos_adjustment=(0.73, -0.055), size=(280,450), file_name=tophosts_file, dpi_scale=dpi_scale)
 
